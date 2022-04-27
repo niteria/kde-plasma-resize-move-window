@@ -1,12 +1,11 @@
-# Center window in KDE Plasma using KWin scripting
+# Reize to the third in KDE Plasma using KWin scripting
 
-This is a very simple KWin script that does three things via shortcuts that the user can control:
+This is a very simple KWin script that does two things:
 
-* resizes the current window to 100 % height and 50 % width of the screen
-* grows it horizontally if needed in 40 px steps
-* shrinks it horizontally if needed in 40 px steps
+* resizes the current window to 100 % height and 33 % width of the screen
+* resizes the current window to 100 % height and 66 % width of the screen
 
-I use this functionality every day with my 27" 2K screen. It's super useful to not have your web browser or what not take the whole horizontal space. The growing and shrinking are extremely useful, too.
+I want to use this functionality for my 27" 2K screen. Of 50% makes windows to large so I want thirds or two thirds.
 
 # Installation
 
