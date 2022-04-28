@@ -1,18 +1,18 @@
-* Reize to the third in KDE Plasma using KWin scripting
+* Flexibly resize and move the current window in KDE Plasma using KWin scripting
+  This is a very simple but flexible and easy to modify KWin script (see [[file:contents/code/main.js]]). By default it defines the following shortcuts/keybindings which work like the screen edge snap zones:
 
-This is a very simple but flexible KWin script that does two things:
+  - =Meta+D=: snap the current window to the left third of the current monitor
+  - =Meta+Shift+D=: snap the current window to the left two thirds of the current monitor
+  - =Meta+G=: snap the current window to the right third of the current monitor
+  - =Meta+Shift+G=: snap the current window to the right third of the current monitor
+  - =Meta+F=: snap the current window to the center third of the current monitor
+  - =Meta+Shift+F=: snap the current window to the center quarter of the current monitor
 
-- resizes the current window to 100 % height and 33 % width of the screen
-- resizes the current window to 100 % height and 66 % width of the screen
-
-I use this functionality often with 27" monitor. The snap-to-half edges which makes 50% screen width windows too large or too small. I want 1/3 or 2/3 screen width windows instead.
-
-The script itself is SUPER easy to follow so checkout contents/code/main.js and customize it to fullfil your needs.
+  I use this functionality often with 27" monitor. The edge snap zone which makes 50% screen width windows which are often too large or too small and thirds are often more reasonable.
 
 * Installation
-
-Clone this repo somewhere.
-Modify and add additional keybinds to the script contents/code/main.js
-Then just run kpackagetool5 --type=KWin/Script -i . inside the directory.
+  1. Clone this repo somewhere.
+  2. Modify and add additional keybindings to the script file:contents/code/main.js. For testing different inputs, copy the function into =plasma-interactiveconsole --kwin=.
+  3. Run =kpackagetool5 --type=KWin/Script -i .= inside the directory to install the script. (It should be possible to install this script from the KWin Scripts in system settings, but I have never got this to work.) You may need to restart KWin for this to take effect. 
 
 
